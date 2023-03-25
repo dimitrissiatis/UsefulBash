@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo "!! PLEASE NOTE THAT DOCKER IS NOT SUPPORTED BY REDHAT BASED OS !!"
+echo "!! PLEASE NOTE THAT DOCKER IS NOT SUPPORTED BY REDHAT BASED OS NEWER THAN VERSION 8 !!"
 checkOS=$( cat /etc/redhat-release | wc -l )
 
 if [ $checkOS -eq 1 ]
