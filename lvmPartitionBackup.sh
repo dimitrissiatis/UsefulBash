@@ -27,7 +27,7 @@ echo "Backup Completed!"
 exit 0
 
 
-# To recover it just do as below as root:
+# To restore it just do as below as root:
 
 # lvcreate -L 50M -n lv5 rl      ---> Replace the 50M with capacity equal or more of your backup .img file and replace lv5 with the name of the new lv
 # dd if=lv_backup_<date>.img of=/dev/mapper/rl-lv5       ---> Replace the /dev/mapper/rl-lv5 with the map of your actual path to the logical volume
